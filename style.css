@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*MACRO STRUTTURA*/
+
+.main{
+    display: flex;
+    height: calc(100vh - 70px);
+    background-color: red;
+}
+
+
+.sidebar{
+    flex-shrink: 0;
+    flex-basis: 250px;
+    height: 100%;
+    background-color: blue;
+}
+
+.content-main{
+    overflow: auto;
+    flex-grow: 1;
+    margin-top: 100px;
+}
+
+
+.header{
+    position: fixed;
+    width: calc(100% - 250px);
+    left: 250px;
+    height: 100px;
+    background-color: bisque;
+}
+
+.footer{
+    height: 70px;
+    background-color: blueviolet;
+}
